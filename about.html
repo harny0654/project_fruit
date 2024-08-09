@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo"
+        ><img src="img/ส้ม-Photoroom.png" alt=""
+      /></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </header>
+
+    <div class="container">
+      <div class="menu-box">
+        <h2>Harny FRUIT จำกัด</h2>
+        <p>This is FRUIT SHOP the menu fruit.</p>
+      </div>
+
+      <div class="card-container1">
+        <div class="card">
+          <img src="img/ส้ม-Photoroom.png" alt="" />
+          <div class="card-content">
+            <h3>Product 1</h3>
+            <p>price: $10</p>
+            <p>Email: example1@example.com</p>
+            <br />
+            <button onclick="orderProduct('Product 1', 10)">สั่งซื้อ</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/apple-Photoroom.png" alt="" />
+          <div class="card-content">
+            <h3>Product 2</h3>
+            <p>price: $20</p>
+            <p>Email: example2@example.com</p>
+            <br />
+            <button onclick="orderProduct('Product 2', 20)">สั่งซื้อ</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/banana-Photoroom.png" alt="" />
+          <div class="card-content">
+            <h3>Product 3</h3>
+            <p>price: $30</p>
+            <p>Email: example3@example.com</p>
+            <br />
+            <button onclick="orderProduct('Product 3', 30)">สั่งซื้อ</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-container1">
+        <div class="card">
+          <img src="img/grape-Photoroom.png" alt="" />
+          <div class="card-content">
+            <h3>Product 1</h3>
+            <p>price: $10</p>
+            <p>Email: example1@example.com</p>
+            <br />
+            <button onclick="orderProduct('Product 1', 10)">สั่งซื้อ</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/Melon-Photoroom.png" alt="" />
+          <div class="card-content">
+            <h3>Product 2</h3>
+            <p>price: $20</p>
+            <p>Email: example2@example.com</p>
+            <br />
+            <button onclick="orderProduct('Product 2', 20)">สั่งซื้อ</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/strawberry-Photoroom.png" alt="" />
+          <div class="card-content">
+            <h3>Product 3</h3>
+            <p>price: $30</p>
+            <p>Email: example3@example.com</p>
+            <br />
+            <button onclick="orderProduct('Product 3', 30)">สั่งซื้อ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="order-list-container">
+      <h2>รายการสั่งซื้อของคุณ</h2>
+      <ul id="order-list"></ul>
+      <button id="payment-button" onclick="confirmPayment()">ชำระเงิน</button>
+    </div>
+
+    <script src="app1.js"></script>
+  </body>
+</html>

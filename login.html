@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="brand">HOME</a>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+           
+        </div>
+    </nav>
+    <div class="con">
+        <h3 class="mt-4">เข้าสู่ระบบ</h3>
+            <form action="product.html" onsubmit="return validateForm()">                
+                <div class="mb-3">
+                    <label for="username">User ID</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="mb-3">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        <hr>
+        <p>ยังเป็นสมาชิกอยู่ใช่ไหม คลิ้กที่นี่เพื่อ <a href="register.html">สมัครสมาชิก</a></p>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>
